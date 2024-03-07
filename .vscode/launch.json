@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Google Cloud Function",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/index.js", // Path to your entry file
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/functions-framework", // Path to functions-framework
+      "runtimeArgs": ["--target=loadCSVFromGCS"] // Your function name
+    }
+  ]
+}
